@@ -1,6 +1,10 @@
 
-
+// git status test
 // Anzahl Teilnehmer: ~25
+
+int doNothing(){
+    return 0;
+}
 
 int ack(int x, int y) {
     if (x == 0) {

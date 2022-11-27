@@ -71,15 +71,15 @@ list treeToList (tree t){
 
 int main () {
 
-    /*
+    
     tree t1 = createNode(1, NULL, NULL);
     tree t2 = createNode(2, t1, NULL);
     tree t3 = createNode(1, NULL, NULL);
     tree tree = createNode(3, t3, t2);
-    */
-    tree t =    createNode(3, createNode(1, NULL, NULL),
+    
+    /*tree t =    createNode(3, createNode(1, NULL, NULL),
                     createNode(2,
-                        createNode(1, NULL, NULL), NULL));
+                        createNode(1, NULL, NULL), NULL));*/
     insertl(t, 4);
     printf("Blattprodukt: %d \n", leafprod(t));
 
