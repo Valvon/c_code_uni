@@ -12,7 +12,7 @@ void quicksort(int *array[], int left, int right){
     int swap;
     do {
         while(array[l] < pivotElement) l += 1;
-        while(array(r) > pivotElement) r -= 1;
+        while(array[r] > pivotElement) r -= 1;
 
         if (l <= r) {
             swap = array[l];
@@ -21,15 +21,15 @@ void quicksort(int *array[], int left, int right){
         }
     } while (l <= r);
 
-    if (left < r) {quicksort(array[], left, pivot - 1);}
-    if (right < l) {quicksort(array[], right, pivot + 1);}
+    if (left < r) {quicksort(array, left, pivot - 1);}
+    if (right < l) {quicksort(array, right, pivot + 1);}
 
 }
 
 
 void printArray(int array[], int start, int end) {
     printf("{%d", array[start]);
-    for(int i = start+1, i<= end, i++){
+    for(int i = start+1; i<= end; i++){
         printf(",%d", array[i]);
     }
     printf("}");

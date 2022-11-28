@@ -80,8 +80,8 @@ int main () {
     /*tree t =    createNode(3, createNode(1, NULL, NULL),
                     createNode(2,
                         createNode(1, NULL, NULL), NULL));*/
-    insertl(t, 4);
-    printf("Blattprodukt: %d \n", leafprod(t));
+    insertl(&tree, 4);
+    printf("Blattprodukt: %d \n", leafprod(tree));
 
     
     return 0;
